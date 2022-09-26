@@ -9,6 +9,11 @@ import {
 
 import login from "./components/login";
 import addPatient from './components/addPatient';
+import manageDoctor from './components/manageDoctor';
+import manageInpatient from './components/manageInpatient';
+import manageOutpatient from './components/manageOutpatient';
+import managePharmacist from './components/managePharmacist';
+import manageReceptionist from './components/manageReceptionist';
 
 function App() {
   return (
@@ -19,7 +24,7 @@ function App() {
         {/* This route is for home component 
         with exact path "/", in component props 
         we passes the imported component*/}
-        <Route exact path="/" component={addPatient} />
+        <Route exact path="/" component={manageDoctor} />
         
         {/* This route is for home component 
         with exact path "/", in component props 
