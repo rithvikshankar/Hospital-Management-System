@@ -19,7 +19,7 @@ function App() {
         {/* This route is for home component 
         with exact path "/", in component props 
         we passes the imported component*/}
-        <Route exact path="/" component={login} />
+        <Route exact path="/" component={addPatient} />
         
         {/* This route is for home component 
         with exact path "/", in component props 
