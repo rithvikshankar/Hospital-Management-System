@@ -136,19 +136,19 @@ const manageReceptionist = () => {
                                         </div>
                                     </div>
                                     </td>
-                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                    <td className="p-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                     <h6 className="mb-0 leading-normal text-sm">{item.name}{' '}{item.last_name}</h6>
                                     </td>
-                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                    <td className="p-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                     <h6 className="mb-0 leading-normal text-sm">{item.email}</h6>
                                     </td>
-                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                    <td className="p-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                     <h6 className="mb-0 leading-normal text-sm">{item.age}</h6>
                                     </td>
-                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                    <td className="p-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                     <h6 className="mb-0 leading-normal text-sm">{item.contact}</h6>
                                     </td>
-                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                    <td className="p-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                     <h6 className="mb-0 leading-normal text-sm">{item.address}</h6>
                                     </td>
                                     <td className="p-2 bg-transparent border-b whitespace-nowrap shadow-transparent">

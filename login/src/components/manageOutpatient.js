@@ -106,7 +106,7 @@ const manageOutpatient = () => {
                 <div className="flex-none w-full max-w-full px-3">
                     <div className="relative flex flex-col min-w-0 mb-6 break-words bg-white pb-6 border-1 border-black border-solid shadow-soft-xl rounded bg-clip-border">
                     <div className="p-6 pb-0 mb-0 bg-white border-1 border-b-solid rounded border-black">
-                        <h6 className="text-2xl uppercase">Outatients</h6>
+                        <h6 className="text-2xl uppercase">Outpatients</h6>
                     </div>
                     <div className="flex-auto px-0 pt-0 pb-2">
                         <div className="p-0 overflow-x-auto">
@@ -136,19 +136,19 @@ const manageOutpatient = () => {
                                         </div>
                                     </div>
                                     </td>
-                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                    <td className="p-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                     <h6 className="mb-0 leading-normal text-sm">{item.name}{' '}{item.last_name}</h6>
                                     </td>
-                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                    <td className="p-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                     <h6 className="mb-0 leading-normal text-sm">{item.email}</h6>
                                     </td>
-                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                    <td className="p-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                     <h6 className="mb-0 leading-normal text-sm">{item.age}</h6>
                                     </td>
-                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                    <td className="p-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                     <h6 className="mb-0 leading-normal text-sm">{item.contact}</h6>
                                     </td>
-                                    <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
+                                    <td className="p-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                     <h6 className="mb-0 leading-normal text-sm">{item.address}</h6>
                                     </td>
                                     <td className="p-2 bg-transparent border-b whitespace-nowrap shadow-transparent">
