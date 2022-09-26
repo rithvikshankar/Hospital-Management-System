@@ -7,6 +7,7 @@ import {
   Redirect,
 } from "react-router-dom";
 
+
 import login from "./components/login";
 import addPatient from './components/addPatient';
 import manageDoctor from './components/manageDoctor';
