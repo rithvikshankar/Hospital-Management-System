@@ -4,7 +4,7 @@ import pictblack from "./logos/main_logo_black.svg";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const EditAppointments = () => {
+const EditAppointment = () => {
     const data ={
     
         "Appointments" :[
@@ -13,6 +13,7 @@ const EditAppointments = () => {
             "date":"24-09-2022",
             "from":"9:15",
             "to":"10:30",
+            "symptoms":"fever, cold, cough",
             "patient":"John",
             "doctor":"James",
             "receptionist":"Jack",
@@ -61,6 +62,14 @@ const EditAppointments = () => {
                             placeholder={item.to}/>
                         </div> 
                     </div>
+                    <div className="w-full md:w-[30rem] px-3 mb-6 md:mb-0">
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-symptoms">
+                        Symptoms
+                        </label>
+                        <textarea rows="3" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 
+                        rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-symptoms" type="text" 
+                        placeholder="Fever, cold, cough"/>
+                    </div> <br/>
                     <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-patient">
@@ -100,11 +109,6 @@ const EditAppointments = () => {
                 <br/>
                 <ul>
                     <li>
-                    <button type = "submit" className="px-7 py-3 bg-white mb-3 w-[226px] uppercase rounded border-black border-2 px-3 py-3 transition duration-300 hover:bg-black hover:text-white">
-                            Reset Password
-                        </button>
-                    </li>
-                    <li>
                         <button type = "submit" className="px-7 py-3 bg-white uppercase rounded border-black border-2 px-3 py-3 transition duration-300 hover:bg-black hover:text-white">
                             back
                         </button>
@@ -124,7 +128,7 @@ const EditAppointments = () => {
   );
 }
 
-export default EditAppointments;
+export default EditAppointment;
 
 
 

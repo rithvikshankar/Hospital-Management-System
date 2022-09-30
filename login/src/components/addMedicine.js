@@ -8,9 +8,7 @@ const AddMedicine = () => {
     const data ={
       }
   return (
-        <body className="m-0 font-sans antialiased font-normal text-base leading-default bg-gray-100 text-grey-700">
-
-            <main className="ease-soft-in-out xl:ml-68.5 relative h-full max-h-screen rounded transition-all duration-200">
+        <div className="m-0 font-sans antialiased font-normal text-base leading-default bg-gray-100 text-grey-700">
 
             <div className="w-full px-6 py-6 mx-auto">
 
@@ -23,7 +21,7 @@ const AddMedicine = () => {
                         Name
                         </label>
                         <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded 
-                        py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-name" type="text" placeholder="crocin"/>
+                        py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-name" type="text" placeholder="Crocin"/>
                     </div>
                     <div className="w-full md:w-1/2 px-3">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-description">
@@ -31,7 +29,7 @@ const AddMedicine = () => {
                         </label>
                         <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 
                         leading-tight focus:outline-none focus:bg-white focus:border-gray-400" id="grid-description" type="text" 
-                        placeholder="fever"/>
+                        placeholder="Fever"/>
                     </div>
                     </div>
                     <div className="w-full md:w-[30rem] px-3 mb-6 md:mb-0">
@@ -57,9 +55,8 @@ const AddMedicine = () => {
                 
                 </form>
             </div>
-            </main>
 
-        </body>
+        </div>
   );
 }
 

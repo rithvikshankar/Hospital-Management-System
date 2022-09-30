@@ -13,6 +13,7 @@ const EditDoctor = () => {
             "name":"John",
             "last_name":"Doe",
             "email":"j@gmail.com",
+            "password":"********",
             "age":"25",
             "contact":"1234567890",
             "address":"Xyz-street"
@@ -28,21 +29,21 @@ const EditDoctor = () => {
                 <form className="flex flex-col justify-center place-items-center">
                     
                     <div className="flex flex-wrap -mx-3 mb-6">
-                    <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-id">
-                        ID
-                        </label>
-                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded 
-                        py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-id" type="text" value={item.id}/>
-                    </div>
-                    <div className="w-full md:w-1/2 px-3">
-                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-name">
-                        Name
-                        </label>
-                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 
-                        leading-tight focus:outline-none focus:bg-white focus:border-gray-400" id="grid-name" type="text" 
-                        placeholder={item.name+' '+item.last_name}/>
-                    </div>
+                        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-id">
+                            ID
+                            </label>
+                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded 
+                            py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-id" type="text" value={item.id}/>
+                        </div>
+                        <div className="w-full md:w-1/2 px-3">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-name">
+                            Name
+                            </label>
+                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 
+                            leading-tight focus:outline-none focus:bg-white focus:border-gray-400" id="grid-name" type="text" 
+                            placeholder={item.name+' '+item.last_name}/>
+                        </div>
                     </div>
                     <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -53,6 +54,16 @@ const EditDoctor = () => {
                             mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-email" type="text" placeholder={item.email}/>
                         </div>
                         <div className="w-full md:w-1/2 px-3">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                            Password
+                            </label>
+                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 
+                            leading-tight focus:outline-none focus:bg-white focus:border-gray-400" id="grid-password" type="password" 
+                            placeholder={item.password}/>
+                        </div> 
+                    </div>
+                    <div className="flex flex-wrap -mx-3 mb-6">
+                        <div className="w-full md:w-1/2 px-3">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-age">
                             Age
                             </label>
@@ -60,14 +71,13 @@ const EditDoctor = () => {
                             leading-tight focus:outline-none focus:bg-white focus:border-gray-400" id="grid-age" type="text" 
                             placeholder={item.age}/>
                         </div> 
-                    </div>
-                    <div className="w-full md:w-[30rem] px-3 mb-6 md:mb-0">
-                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-contact">
+                        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-contact">
                             Contact
-                        </label>
-                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 
-                        rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-contact" type="text" 
-                        placeholder={item.contact}/><br/>
+                            </label>
+                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 
+                            mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-contact" type="text" placeholder={item.contact}/>
+                        </div>
                     </div>
                     <div className="w-full md:w-[30rem] px-3 mb-6 md:mb-0">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-address">
@@ -81,11 +91,6 @@ const EditDoctor = () => {
                 
                 <br/>
                 <ul>
-                    <li>
-                    <button type = "submit" className="px-7 py-3 bg-white mb-3 w-[226px] uppercase rounded border-black border-2 px-3 py-3 transition duration-300 hover:bg-black hover:text-white">
-                            Reset Password
-                        </button>
-                    </li>
                     <li>
                         <button type = "submit" className="px-7 py-3 bg-white uppercase rounded border-black border-2 px-3 py-3 transition duration-300 hover:bg-black hover:text-white">
                             back
@@ -101,7 +106,6 @@ const EditDoctor = () => {
 
 
                     </div>
-                {/* </main> */}
 
         </div>
   );

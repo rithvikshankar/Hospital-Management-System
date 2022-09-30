@@ -63,11 +63,6 @@ const EditRooms = () => {
                 <br/>
                 <ul>
                     <li>
-                    <button type = "submit" className="px-7 py-3 bg-white mb-3 w-[226px] uppercase rounded border-black border-2 px-3 py-3 transition duration-300 hover:bg-black hover:text-white">
-                            Reset Password
-                        </button>
-                    </li>
-                    <li>
                         <button type = "submit" className="px-7 py-3 bg-white uppercase rounded border-black border-2 px-3 py-3 transition duration-300 hover:bg-black hover:text-white">
                             back
                         </button>

@@ -4,7 +4,7 @@ import pictblack from "./logos/main_logo_black.svg";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const AddDoctor = () => {
+const AddOutpatient = () => {
     const data ={
         
     }
@@ -86,7 +86,7 @@ const AddDoctor = () => {
   );
 }
 
-export default AddDoctor;
+export default AddOutpatient;
 
 
 

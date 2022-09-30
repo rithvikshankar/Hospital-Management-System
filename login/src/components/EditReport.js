@@ -4,15 +4,15 @@ import pictblack from "./logos/main_logo_black.svg";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const EditInventory = () => {
+const EditReports = () => {
     const data ={
     
-        "Inventory" :[
+        "Reports" :[
           {
             "id":"1",
-            "name":"Crocin",
-            "count":"250",
-            "description":"Fever, Headache"
+            "patient":"John",
+            "query":"Can I",
+            "status":"True"
           }
         ]
       }
@@ -21,7 +21,7 @@ const EditInventory = () => {
 
             <div className="w-full px-6 py-6 mx-auto">
 
-             {data.Inventory.map((item, i) => (
+             {data.Reports.map((item, i) => (
                 <form className="flex flex-col justify-center place-items-center">
                     
                     <div className="flex flex-wrap -mx-3 mb-6">
@@ -33,31 +33,31 @@ const EditInventory = () => {
                             py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-id" type="text" value={item.id}/>
                         </div>
                         <div className="w-full md:w-1/2 px-3">
-                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-name">
-                            Name
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-patient">
+                            Patient
                             </label>
                             <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 
-                            leading-tight focus:outline-none focus:bg-white focus:border-gray-400" id="grid-name" type="text" 
-                            placeholder={item.name}/>
+                            leading-tight focus:outline-none focus:bg-white focus:border-gray-400" id="grid-patient" type="text" 
+                            placeholder={item.patient}/>
                         </div>
                     </div>
                     
                     <div className="w-full md:w-[30rem] px-3 mb-6 md:mb-0">
-                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-count">
-                        Quantity
-                        </label>
-                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 
-                        rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-count" type="text" 
-                        placeholder={item.count}/><br/>
-                    </div>
-                    <div className="w-full md:w-[30rem] px-3 mb-6 md:mb-0">
-                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-decription">
-                        Description
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-query">
+                        Query
                         </label>
                         <textarea rows="4" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 
-                        rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-description" type="text" 
-                        placeholder={item.description}/>
+                        rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-query" type="text" 
+                        placeholder={item.query}/>
                     </div> <br/>
+                    <div className="w-full md:w-[30rem] px-3 mb-6 md:mb-0">
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-status">
+                            Status
+                        </label>
+                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 
+                        rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-status" type="text" 
+                        placeholder={item.status}/><br/>
+                    </div>
                 
                 <br/>
                 <ul>
@@ -81,7 +81,7 @@ const EditInventory = () => {
   );
 }
 
-export default EditInventory;
+export default EditReports;
 
 
 

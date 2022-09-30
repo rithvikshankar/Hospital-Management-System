@@ -16,6 +16,7 @@ const EditPharmacist = () => {
             "name":"John",
             "last_name":"Doe",
             "email":"j@gmail.com",
+            "password":"********",
             "age":"25",
             "contact":"1234567890",
             "address":"Xyz-street"
@@ -58,6 +59,16 @@ const EditPharmacist = () => {
                             mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-email" type="text" placeholder={item.email}/>
                         </div>
                         <div className="w-full md:w-1/2 px-3">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                            Password
+                            </label>
+                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 
+                            leading-tight focus:outline-none focus:bg-white focus:border-gray-400" id="grid-password" type="password" 
+                            placeholder={item.password}/>
+                        </div> 
+                    </div>
+                    <div className="flex flex-wrap -mx-3 mb-6">
+                        <div className="w-full md:w-1/2 px-3">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-age">
                             Age
                             </label>
@@ -65,15 +76,14 @@ const EditPharmacist = () => {
                             leading-tight focus:outline-none focus:bg-white focus:border-gray-400" id="grid-age" type="text" 
                             placeholder={item.age}/>
                         </div> 
-                    </div>
-                    <div className="w-full md:w-[30rem] px-3 mb-6 md:mb-0">
-                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-contact">
+                        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-contact">
                             Contact
-                        </label>
-                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 
-                        rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-contact" type="text" 
-                        placeholder={item.contact}/>
-                    </div> <br/>
+                            </label>
+                            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 
+                            mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-contact" type="text" placeholder={item.contact}/>
+                        </div>
+                    </div>
                     <div className="w-full md:w-[30rem] px-3 mb-6 md:mb-0">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-address">
                         Address
@@ -81,16 +91,8 @@ const EditPharmacist = () => {
                         <textarea rows="4" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 
                         rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-400 focus:bg-white" id="grid-address" type="text" 
                         placeholder={item.address}/>
-                    </div>
-
-                
-                <br/>
+                    </div> <br/>
                 <ul>
-                    <li>
-                    <button type = "submit" className="px-7 py-3 bg-white mb-3 w-[226px] uppercase rounded border-black border-2 px-3 py-3 transition duration-300 hover:bg-black hover:text-white">
-                            Reset Password
-                        </button>
-                    </li>
                     <li>
                         <button type = "submit" className="px-7 py-3 bg-white uppercase rounded border-black border-2 px-3 py-3 transition duration-300 hover:bg-black hover:text-white">
                             back
