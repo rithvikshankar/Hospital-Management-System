@@ -132,7 +132,7 @@ const editReceptionist = () => {
                             back
                         </button>
                         <button type = "submit" className="ml-3 px-7 py-3 bg-white uppercase rounded  border-black border-2 px-3 py-3 transition duration-300 hover:bg-black hover:text-white">
-                            register
+                            update
                         </button>
                     </li>
                 </ul>          
